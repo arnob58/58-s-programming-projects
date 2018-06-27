@@ -42,11 +42,16 @@ def send_mail(gmail,password):
         print('An error has occured. System will be terminated')
         sys.exit()
 
-
-if __name__ == '__main__':
+## This function will take input and processes to the send_mail function
+def start():
     print('Welcome to the simple smtp based mail system. This program can send mails only. Note that the password is NOT MASKED when inputting. So, be cautious when inputing the password. Note the smtp server this project is using google smtp server. So, to send a mail,you only can use an gmail account.')
     print('\nEnter Your Gmail: ')
     Gmail = input()
     print('Enter your password(WARNING! PASSWORD IS NOT MASKED. USE WITH CAUTIOUS):')
     Password = input()
     send_mail(Gmail,Password)
+    
+if __name__ == '__main__':
+    start()
+    
+
