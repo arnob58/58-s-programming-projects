@@ -30,7 +30,7 @@ int select_sort(int arr[], int lenght)
     }
     for(int i = 0; i < lenght; i++)
     {
-        printf("%i ", arr[i]);
+        printf("%d ", arr[i]);
     }
     printf("\n");
 
